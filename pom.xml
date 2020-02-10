@@ -17,7 +17,7 @@
 
     <modules>
         <module>payment-web</module>
-        <module>payment-service</module>
+        <module>payment-core</module>
         <module>payment-dao</module>
         <module>payment-config</module>
     </modules>
@@ -35,7 +35,7 @@
             </dependency>
             <dependency>
                 <groupId>com.lcn29</groupId>
-                <artifactId>payment-service</artifactId>
+                <artifactId>payment-core</artifactId>
                 <version>${revision}</version>
             </dependency>
             <dependency>

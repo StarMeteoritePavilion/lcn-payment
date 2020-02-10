@@ -14,7 +14,7 @@
     <dependencies>
         <dependency>
             <groupId>com.lcn29</groupId>
-            <artifactId>payment-service</artifactId>
+            <artifactId>payment-core</artifactId>
         </dependency>
     </dependencies>
 
