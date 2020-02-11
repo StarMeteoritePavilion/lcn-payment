@@ -6,9 +6,9 @@ mybatis:
 spring:
   # db
   datasource:
-    url: your db connect url    ?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8&useSSL=false
-    username:
-    password:
+    url: jdbc:mysql://10.144.6.213:3306/test?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: root
+    password: github:lcn29
     # druid connect pool
     druid:
       initial-size: 10
