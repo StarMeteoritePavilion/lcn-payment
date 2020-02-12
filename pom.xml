@@ -24,10 +24,18 @@
 
     <properties>
         <revision>0.0.1-SNAPSHOT</revision>
+        <alipay.sdk.version>4.9.13.ALL</alipay.sdk.version>
     </properties>
 
     <dependencyManagement>
         <dependencies>
+
+            <dependency>
+                <groupId>com.alipay.sdk</groupId>
+                <artifactId>alipay-sdk-java</artifactId>
+                <version>${alipay.sdk.version}</version>
+            </dependency>
+
             <dependency>
                 <groupId>com.lcn29</groupId>
                 <artifactId>payment-web</artifactId>

@@ -1,9 +1,8 @@
 
-# myBatis
-mybatis:
-  mapper-locations: classpath*:mapper/*.xml
-
+# spring application config
 spring:
+  profiles:
+    active: dev
   # db
   datasource:
     url: jdbc:mysql://10.144.6.213:3306/test?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8&useSSL=false
@@ -16,3 +15,8 @@ spring:
       max-active: 100
       max-wait: 3000
       remove-abandoned-timeout: 180
+
+
+# myBatis
+mybatis:
+  mapper-locations: classpath*:mapper/*.xml

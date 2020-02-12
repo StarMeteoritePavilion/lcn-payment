@@ -20,6 +20,11 @@
             <groupId>com.lcn29</groupId>
             <artifactId>payment-config</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>com.alipay.sdk</groupId>
+            <artifactId>alipay-sdk-java</artifactId>
+        </dependency>
     </dependencies>
 
 

@@ -1,5 +1,6 @@
 package com.lcn29;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -13,6 +14,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  */
 
 @SpringBootApplication
+@MapperScan("com.lcn29.mapper")
 public class PaymentApplicationLauncher {
 
     public static void main(String[] args) {
