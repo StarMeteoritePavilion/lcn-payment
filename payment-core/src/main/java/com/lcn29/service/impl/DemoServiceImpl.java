@@ -1,6 +1,7 @@
-package com.lcn29.impl;
+package com.lcn29.service.impl;
 
-import com.lcn29.DemoService;
+
+import com.lcn29.service.DemoService;
 import org.springframework.stereotype.Service;
 
 /**

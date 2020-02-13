@@ -1,4 +1,4 @@
-package com.lcn29;
+package com.lcn29.service;
 
 /**
  * <pre>
@@ -6,9 +6,8 @@ package com.lcn29;
  * </pre>
  *
  * @author LCN
- * @date 2020-02-10 15:28
+ * @date 2020-02-13 16:43
  */
 public interface DemoService {
-
     String sayHello();
 }
