@@ -20,6 +20,12 @@ import org.springframework.stereotype.Component;
 @Component
 public class AlipayClientFactory implements FactoryBean<AlipayClient> {
 
+    private static final String REQUEST_FORMAT = "json";
+
+    private static final String CHARSET = "utf-8";
+
+    private static final String SIGN_TYPE = "RSA2";
+
     @Autowired
     protected Environment config;
 
@@ -29,13 +35,7 @@ public class AlipayClientFactory implements FactoryBean<AlipayClient> {
     @Override
     public AlipayClient getObject() throws Exception {
 
-        String property = config.getProperty("alipay.application.tenantId");
-
-        config.getProperty("AAA");
-
-        System.out.println(property);
-
-        System.out.println(privateKey);
+        String signType = config.getProperty("alipay.application.signType", SIGN_TYPE);
 
         return new DefaultAlipayClient("", "", "");
     }
