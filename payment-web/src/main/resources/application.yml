@@ -3,19 +3,14 @@
 spring:
   profiles:
     active: dev
-  # db
   datasource:
-    url: jdbc:mysql://10.144.6.213:3306/test?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8&useSSL=false
-    username: root
-    password: github:lcn29
-    # druid connect pool
+    # druid connection pool
     druid:
       initial-size: 10
       min-idle: 30
       max-active: 100
       max-wait: 3000
       remove-abandoned-timeout: 180
-
 
 # myBatis
 mybatis:
