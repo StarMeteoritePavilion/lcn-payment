@@ -1,4 +1,4 @@
-package com.lcn29.service;
+package com.lcn29.payment.service;
 
 /**
  * <pre>

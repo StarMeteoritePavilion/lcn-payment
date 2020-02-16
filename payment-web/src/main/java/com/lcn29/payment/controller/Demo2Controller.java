@@ -1,7 +1,7 @@
-package com.lcn29.controller;
+package com.lcn29.payment.controller;
 
 import com.alipay.api.AlipayClient;
-import com.lcn29.service.DemoService;
+import com.lcn29.payment.service.DemoService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -13,11 +13,10 @@ import javax.annotation.Resource;
  * </pre>
  *
  * @author LCN
- * @date 2020-02-10 15:29
+ * @date 2020-02-13 16:44
  */
-
 @RestController
-public class DemoController {
+public class Demo2Controller {
 
     @Resource
     private DemoService demoService;
@@ -25,7 +24,7 @@ public class DemoController {
     @Resource
     private AlipayClient alipayClient;
 
-    @GetMapping("/hello")
+    @GetMapping("/hello2")
     public String sayhello() {
 
         System.out.println(demoService.hashCode() + "///" + demoService);
@@ -34,5 +33,4 @@ public class DemoController {
 
         return demoService.sayHello();
     }
-
 }

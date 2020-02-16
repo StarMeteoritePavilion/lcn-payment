@@ -1,7 +1,7 @@
-package com.lcn29.service.impl;
+package com.lcn29.payment.service.impl;
 
 
-import com.lcn29.service.DemoService;
+import com.lcn29.payment.service.DemoService;
 import org.springframework.stereotype.Service;
 
 /**
