@@ -1,4 +1,4 @@
-package com.lcn29.payment;
+package com.lcn29.payment.config;
 
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
@@ -6,11 +6,10 @@ import com.alipay.api.AlipayApiException;
 import com.alipay.api.AlipayClient;
 import com.alipay.api.request.AlipayTradePrecreateRequest;
 import com.alipay.api.response.AlipayTradePrecreateResponse;
+import com.lcn29.payment.BaseTest;
+import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
-import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.junit4.SpringRunner;
 
 import javax.annotation.Resource;
 
@@ -20,12 +19,10 @@ import javax.annotation.Resource;
  * </pre>
  *
  * @author LCN
- * @date 2020-02-14 15:13
+ * @date 2020-02-19 18:06
  */
-
-@SpringBootTest
-@RunWith(SpringRunner.class)
-public class AlipayTest {
+@Slf4j
+public class AlipayConfigTest extends BaseTest {
 
     @Resource
     private AlipayClient alipayClient;
@@ -43,9 +40,10 @@ public class AlipayTest {
         AlipayTradePrecreateResponse response = alipayClient.execute(request);
         System.out.println(JSONObject.toJSONString(response));
         if (response.isSuccess()) {
+            log.info("获取支付二维码成功");
             System.out.println("获取支付二维码成功");
         } else {
-            System.out.println("获取支付二维码失败");
+            log.error("获取支付二维码失败");
         }
     }
 

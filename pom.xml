@@ -20,6 +20,7 @@
         <module>payment-core</module>
         <module>payment-dao</module>
         <module>payment-config</module>
+        <module>payment-test</module>
     </modules>
 
     <properties>
@@ -54,6 +55,11 @@
             <dependency>
                 <groupId>com.lcn29</groupId>
                 <artifactId>payment-dao</artifactId>
+                <version>${revision}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.lcn29</groupId>
+                <artifactId>payment-test</artifactId>
                 <version>${revision}</version>
             </dependency>
         </dependencies>
